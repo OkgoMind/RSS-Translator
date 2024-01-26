@@ -71,7 +71,11 @@ If you need to enable SSL (https), please refer to [here](#enable-ssl)
 Create data folder\
 `mkdir -p ～/rsstranslator/data`\
 Run the following command to start the container\
-`docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`
+`docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`\
+If you encounter a CSRF error, you need to set the environment variable `CSRF_TRUSTED_ORIGINS` to allow your domain to
+access, for example:\
+`CSRF_TRUSTED_ORIGINS=https://*.example.com`\
+Please restart the service after setting
 
 ---
 #### Manual Installation

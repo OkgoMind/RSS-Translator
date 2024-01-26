@@ -73,7 +73,10 @@ sudo ./rsstranslator_install_update.sh
 创建数据文件，以存放数据\
 `mkdir -p ~/rsstranslator/data`\
 启动容器\
-`docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`
+`docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`\
+如果您遇到CSRF的报错问题，则您需要设置环境变量`CSRF_TRUSTED_ORIGINS`，以允许您的域名访问，例如：\
+`CSRF_TRUSTED_ORIGINS=https://*.example.com`\
+设置完成后请重启服务
 
 ---
 #### 手动安装

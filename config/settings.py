@@ -29,6 +29,7 @@ SECRET_KEY = get_random_secret_key()
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS', '').split(',')
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
