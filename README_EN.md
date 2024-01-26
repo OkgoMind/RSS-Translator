@@ -69,7 +69,7 @@ If you need to enable SSL (https), please refer to [here](#enable-ssl)
 #### Install with Docker
 
 Create data folder\
-`mkdir -p rsstranslator/data`\
+`mkdir -p ～/rsstranslator/data`\
 Run the following command to start the container\
 `docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`
 
@@ -134,6 +134,7 @@ Installation complete, visit [http://127.0.0.1:8000](http://127.0.0.1:8000)
 ### Uninstall
 `sudo . /home/rsstranslator/deploy/uninstall.sh`
 Note: This uninstall script does not delete the data backup files in the /tmp directory, just in case!
+
 ---
 ### Enable SSL
 It is recommended to use caddy with cloudflare's dns proxy.

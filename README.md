@@ -71,8 +71,8 @@ sudo ./rsstranslator_install_update.sh
 #### 使用Docker安装
 
 创建数据文件，以存放数据\
-`mkdir -p rsstranslator/data`\
-启动容器
+`mkdir -p ~/rsstranslator/data`\
+启动容器\
 `docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`
 
 ---
@@ -142,6 +142,7 @@ sudo -u rsstranslator /bin/bash -c "/home/rsstranslator/.venv/bin/python /home/r
 ### 卸载
 `sudo ./home/rsstranslator/deploy/uninstall.sh`
 注意：该卸载脚本并不会删除/tmp目录下的数据备份文件，以防万一
+
 ---
 ### 开启SSL
 建议使用caddy并配合cloudflare的dns代理使用\
