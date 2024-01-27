@@ -74,7 +74,7 @@ sudo ./rsstranslator_install_update.sh
 `mkdir -p ~/rsstranslator/`\
 进入rsstranslator文件夹
 `cd ~/rsstranslator`\
-下载[docker-compose.yml](docker-compose.yml)文件\
+下载[docker-compose.yml](deploy/docker-compose.yml)文件\
 `wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\
 启动容器\
 `docker-compose up -d`\

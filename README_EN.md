@@ -72,7 +72,7 @@ Create a data folder to store the data\
 `mkdir -p ~/rsstranslator/`\
 Enter the rsstranslator folder
 `cd ~/rsstranslator`\
-Download the docker-compose.yml file\
+Download the [docker-compose.yml](deploy/docker-compose.yml) file\
 `wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\
 Start the container\
 `docker-compose up -d`\
