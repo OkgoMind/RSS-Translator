@@ -76,7 +76,7 @@ Download the [docker-compose.yml](deploy/docker-compose.yml) file\
 `wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\
 Start the container\
 `docker-compose up -d`\
-Done
+Done\
 If you encounter a CSRF error, you need to set the environment variable `
 CSRF_TRUSTED_ORIGINS` to allow your domain to access, for example:\
 `CSRF_TRUSTED_ORIGINS=https://*.example.com`\

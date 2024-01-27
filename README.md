@@ -78,7 +78,7 @@ sudo ./rsstranslator_install_update.sh
 `wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\
 启动容器\
 `docker-compose up -d`\
-完成
+完成\
 如果您遇到CSRF的报错问题，则您需要设置环境变量`CSRF_TRUSTED_ORIGINS`，以允许您的域名访问，例如：\
 `CSRF_TRUSTED_ORIGINS=https://*.example.com`\
 设置完成后请重启服务
