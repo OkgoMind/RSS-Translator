@@ -70,10 +70,15 @@ sudo ./rsstranslator_install_update.sh
 
 #### 使用Docker安装
 
-创建数据文件，以存放数据\
-`mkdir -p ~/rsstranslator/data`\
+创建数据文件夹，以存放数据\
+`mkdir -p ~/rsstranslator/`\
+进入rsstranslator文件夹
+`cd ~/rsstranslator`\
+下载[docker-compose.yml](docker-compose.yml)文件\
+`wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\
 启动容器\
-`docker run -d -p 8000:8000 -v ~/rsstranslator/data:/home/rsstranslator/data --name rsstranslator rsstranslator/rsstranslator:latest`\
+`docker-compose up -d`\
+完成
 如果您遇到CSRF的报错问题，则您需要设置环境变量`CSRF_TRUSTED_ORIGINS`，以允许您的域名访问，例如：\
 `CSRF_TRUSTED_ORIGINS=https://*.example.com`\
 设置完成后请重启服务
