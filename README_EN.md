@@ -4,6 +4,7 @@
 </div>
 <br/>
 
+Check [Demo](https://demo.rsstranslator.com) for preview\
 Telegram Group: https://t.me/rsstranslator \
 Development Progress: https://github.com/orgs/rss-translator/projects/2/views/1
 
