@@ -72,7 +72,7 @@ sudo ./rsstranslator_install_update.sh
 
 创建数据文件夹，以存放数据\
 `mkdir -p ~/rsstranslator/`\
-进入rsstranslator文件夹
+进入rsstranslator文件夹\
 `cd ~/rsstranslator`\
 下载[docker-compose.yml](deploy/docker-compose.yml)文件\
 `wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\

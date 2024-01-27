@@ -70,7 +70,7 @@ If you need to enable SSL (https), please refer to [here](#enable-ssl)
 
 Create a data folder to store the data\
 `mkdir -p ~/rsstranslator/`\
-Enter the rsstranslator folder
+Enter the rsstranslator folder\
 `cd ~/rsstranslator`\
 Download the [docker-compose.yml](deploy/docker-compose.yml) file\
 `wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/docker-compose.yml"`\
